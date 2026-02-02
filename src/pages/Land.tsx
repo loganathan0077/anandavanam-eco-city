@@ -58,7 +58,7 @@ const Land = () => {
     {
       name: "Community Center",
       area: "2 acres",
-      description: "Gathering halls, meditation spaces, workshops, libraries, and wellness centers. The social and spiritual heart of ANANDAVANAM."
+      description: "Gathering halls, meditation spaces, workshops, libraries, and wellness centers. The social and spiritual heart of SUZHI."
     },
     {
       name: "Nature Reserve",
@@ -70,10 +70,10 @@ const Land = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <Hero
-        title="The Land"
-        subtitle="50 Acres of Sustainable Paradise — Our Foundation for the Future"
+        title="The Land of SUZHI"
+        subtitle="50 Acres of Pristine Nature, Designed for Regeneration"
         height="medium"
         image={landImage}
       />
@@ -87,16 +87,16 @@ const Land = () => {
               Our Sustainable Sanctuary
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              ANANDAVANAM sits on 50 carefully selected acres designed to demonstrate that modern 
-              living can be completely sustainable. Every square meter is thoughtfully planned to 
-              maximize ecological harmony, food production, renewable energy generation, and quality 
-              of life for our community.
+              Our 50-acre site is located in the lush Western Ghats, chosen specifically for its
+              biodiversity, water resources, and energetic potential. SUZHI is designed
+              not just to sit on the land, but to emerge from it — preserving 70% of the area
+              as wild nature and productive food forests.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {landFeatures.map((feature, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+              <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <feature.icon className="h-6 w-6 text-primary" />
@@ -113,7 +113,7 @@ const Land = () => {
       </section>
 
       {/* Land Zones */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -121,14 +121,14 @@ const Land = () => {
                 Land Allocation
               </h2>
               <p className="text-lg text-muted-foreground">
-                Each zone is carefully designed to serve specific functions while maintaining 
+                Each zone is carefully designed to serve specific functions while maintaining
                 ecological balance and aesthetic beauty.
               </p>
             </div>
 
             <div className="space-y-6">
               {zones.map((zone, index) => (
-                <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+                <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                   <CardContent className="p-8">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <h3 className="text-2xl font-bold text-foreground mb-2 md:mb-0">{zone.name}</h3>
@@ -157,7 +157,7 @@ const Land = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="text-center mb-4">
                     <div className="text-5xl font-bold text-primary mb-2">100%</div>
@@ -169,7 +169,7 @@ const Land = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="text-center mb-4">
                     <div className="text-5xl font-bold text-primary mb-2">90%</div>
@@ -181,7 +181,7 @@ const Land = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="text-center mb-4">
                     <div className="text-5xl font-bold text-primary mb-2">0%</div>
@@ -193,7 +193,7 @@ const Land = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="text-center mb-4">
                     <div className="text-5xl font-bold text-primary mb-2">-50%</div>
@@ -210,18 +210,18 @@ const Land = () => {
       </section>
 
       {/* Future Expansion */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Future Expansion
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              While our current 50 acres serve as the foundation, we envision gradual expansion 
+              While our current 50 acres serve as the foundation, we envision gradual expansion
               as our community grows. Future phases may include:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">Educational Campus</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -230,7 +230,7 @@ const Land = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">Research Center</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -239,7 +239,7 @@ const Land = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">Wellness Retreat</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -248,7 +248,7 @@ const Land = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">Innovation Hub</h3>
                   <p className="text-muted-foreground leading-relaxed">

@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import citizenHero from "@/assets/citizen-hero.jpg";
 
 const Citizen = () => {
   const contributionTypes = [
@@ -48,7 +49,7 @@ const Citizen = () => {
     {
       step: 3,
       title: "Smart Contract Processing",
-      description: "Once verified, smart contracts automatically calculate appropriate ANVD tokens based on work type, skill level, and time invested."
+      description: "Once verified, smart contracts automatically calculate appropriate SUZHI tokens based on work type, skill level, and time invested."
     },
     {
       step: 4,
@@ -58,7 +59,7 @@ const Citizen = () => {
   ];
 
   const requirements = [
-    "Alignment with ANANDAVANAM's values of sustainability, equality, and consciousness",
+    "Alignment with SUZHI's values of sustainability, equality, and consciousness",
     "Willingness to participate in community governance and decision-making",
     "Commitment to contribute meaningful work to the collective",
     "Respect for all community members and natural ecosystems",
@@ -74,6 +75,7 @@ const Citizen = () => {
         title="Citizen Model"
         subtitle="Earn, Contribute, and Thrive — The Proof of Contribution System"
         height="medium"
+        image={citizenHero}
       />
 
       {/* Introduction */}
@@ -82,19 +84,18 @@ const Citizen = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <UserPlus className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Proof of Contribution
+              SUZHI Citizen Model
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At ANANDAVANAM, citizenship isn't passive — it's earned through meaningful contribution.
-              Our Proof of Contribution system ensures that everyone who adds value to the community
-              is fairly compensated with ANVD tokens. No exploitation, no unfair hierarchies, just
-              transparent recognition of real work.
+              In SUZHI, citizenship is earned, not bought.
+              We operate on a "Proof of Contribution" model where your value to the community
+              is measured by what you give, not what you own.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {contributionTypes.map((type, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+              <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <type.icon className="h-6 w-6 text-primary" />
@@ -122,7 +123,7 @@ const Citizen = () => {
       </section>
 
       {/* Verification Process */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -166,12 +167,12 @@ const Citizen = () => {
                 Token Calculation
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                ANVD tokens are calculated based on multiple factors to ensure fair compensation.
+                SUZHI tokens are calculated based on multiple factors to ensure fair compensation.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold text-primary mb-2">Time</div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Hours Invested</h3>
@@ -181,7 +182,7 @@ const Citizen = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold text-primary mb-2">Skill</div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Expertise Level</h3>
@@ -191,7 +192,7 @@ const Citizen = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold text-primary mb-2">Impact</div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Community Value</h3>
@@ -208,7 +209,7 @@ const Citizen = () => {
                 <div className="space-y-3 text-muted-foreground">
                   <p className="flex justify-between">
                     <span>Base Rate (5 hours of farming):</span>
-                    <span className="font-semibold">50 ANVD</span>
+                    <span className="font-semibold">50 SUZHI</span>
                   </p>
                   <p className="flex justify-between">
                     <span>Skill Multiplier (organic certification):</span>
@@ -216,12 +217,12 @@ const Citizen = () => {
                   </p>
                   <p className="flex justify-between">
                     <span>Impact Bonus (feeds 20 people):</span>
-                    <span className="font-semibold">+10 ANVD</span>
+                    <span className="font-semibold">+10 SUZHI</span>
                   </p>
                   <div className="border-t border-border pt-3 mt-3">
                     <p className="flex justify-between text-lg font-bold text-foreground">
                       <span>Total Earned:</span>
-                      <span className="text-primary">70 ANVD</span>
+                      <span className="text-primary">70 SUZHI</span>
                     </p>
                   </div>
                 </div>
@@ -232,16 +233,16 @@ const Citizen = () => {
       </section>
 
       {/* Becoming a Citizen */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <UserPlus className="h-12 w-12 text-primary mx-auto mb-4" />
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Becoming a Citizen
+                Path to Citizenship
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Ready to join ANANDAVANAM? Here's what we look for in potential citizens.
+              <p className="text-lg text-muted-foreground mb-8">
+                Becoming a citizen of SUZHI is a journey of alignment and commitment
               </p>
             </div>
 

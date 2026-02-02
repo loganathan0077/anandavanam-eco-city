@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Card, CardContent } from "@/components/ui/card";
+import roadmapHero from "@/assets/roadmap-hero.jpg";
 
 const Roadmap = () => {
   const phases = [
@@ -38,7 +39,7 @@ const Roadmap = () => {
       milestones: [
         { completed: false, text: "First 50 citizens welcomed" },
         { completed: false, text: "DAO governance officially activated" },
-        { completed: false, text: "ANVD token mainnet launch" },
+        { completed: false, text: "SUZHI token mainnet launch" },
         { completed: false, text: "Community center and meditation spaces opened" }
       ]
     },
@@ -114,6 +115,7 @@ const Roadmap = () => {
         title="Roadmap"
         subtitle="Our Journey from Vision to Reality — Building the Future, One Milestone at a Time"
         height="medium"
+        image={roadmapHero}
       />
 
       {/* Introduction */}

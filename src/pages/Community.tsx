@@ -92,9 +92,9 @@ const Community = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <Hero
-        title="Community Life"
+        title="Community Life in SUZHI"
         subtitle="Living Together in Harmony — Where Every Day is Sacred"
         height="medium"
         image={communityImage}
@@ -106,18 +106,17 @@ const Community = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <Users className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              A Day in ANANDAVANAM
+              A Day in SUZHI
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Life in ANANDAVANAM is about balance — productive work paired with restorative rest, 
-              personal growth alongside community connection, modern efficiency harmonized with timeless 
-              wisdom. Every day is an opportunity to contribute, learn, create, and evolve.
+            <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+              Life in SUZHI is designed to be vibrant, connected, and deeply fulfilling.
+              We've reimagined daily living to prioritize human connection, health, and harmony with nature.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {dailyLife.map((aspect, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+              <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <aspect.icon className="h-6 w-6 text-primary" />
@@ -134,7 +133,7 @@ const Community = () => {
       </section>
 
       {/* Sample Schedule */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -147,7 +146,7 @@ const Community = () => {
               </p>
             </div>
 
-            <Card className="shadow-soft">
+            <Card className="shadow-luxury">
               <CardContent className="p-8">
                 <div className="space-y-6">
                   <div className="flex items-start">
@@ -239,7 +238,7 @@ const Community = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {events.map((event, index) => (
-                <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+                <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="text-xl font-bold text-foreground">{event.title}</h3>
@@ -257,7 +256,7 @@ const Community = () => {
       </section>
 
       {/* Community Spaces */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -272,7 +271,7 @@ const Community = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {spaces.map((space, index) => (
-                <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+                <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                   <CardContent className="p-6">
                     <h3 className="text-lg font-bold text-foreground mb-3">{space.name}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{space.description}</p>

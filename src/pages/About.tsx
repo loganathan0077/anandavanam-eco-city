@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import aboutHero from "@/assets/about-hero.jpg";
 
 const About = () => {
   return (
@@ -10,16 +11,17 @@ const About = () => {
       <Navigation />
 
       <Hero
-        title="About ANANDAVANAM"
+        title="About SUZHI"
         subtitle="Building a Self-Sustaining Spiritual Eco-City for the Next Generation"
         height="medium"
+        image={aboutHero}
       />
 
       {/* Mission & Vision */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <Card className="shadow-soft">
+            <Card className="shadow-luxury">
               <CardHeader>
                 <Target className="h-10 w-10 text-primary mb-4" />
                 <CardTitle className="text-2xl">Our Mission</CardTitle>
@@ -27,7 +29,7 @@ const About = () => {
               <CardContent className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   To create a living model of sustainable, equitable, and spiritually conscious
-                  living that can inspire communities worldwide. ANANDAVANAM demonstrates that
+                  living that can inspire communities worldwide. SUZHI demonstrates that
                   modern technology and ancient wisdom can coexist harmoniously.
                 </p>
                 <p>
@@ -41,7 +43,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-soft">
+            <Card className="shadow-luxury">
               <CardHeader>
                 <Eye className="h-10 w-10 text-primary mb-4" />
                 <CardTitle className="text-2xl">Our Vision</CardTitle>
@@ -52,7 +54,7 @@ const About = () => {
                   democratic, and where spiritual growth is as valued as material prosperity.
                 </p>
                 <p>
-                  We envision ANANDAVANAM as the first of many such communities — networked
+                  We envision SUZHI as the first of many such communities — networked
                   eco-cities that collaborate, share resources, and collectively work toward
                   planetary healing.
                 </p>
@@ -67,7 +69,7 @@ const About = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -76,12 +78,12 @@ const About = () => {
                 Our Philosophy
               </h2>
               <p className="text-lg text-muted-foreground">
-                ANANDAVANAM is built on four foundational pillars that guide every decision we make.
+                SUZHI is built on four foundational pillars that guide every decision we make.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-card p-8 rounded-lg shadow-soft">
+              <div className="bg-card p-8 rounded-lg shadow-luxury">
                 <h3 className="text-xl font-bold text-foreground mb-4">1. Ecological Sustainability</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Every building, every system, every practice is designed to regenerate rather
@@ -90,16 +92,16 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="bg-card p-8 rounded-lg shadow-soft">
+              <div className="bg-card p-8 rounded-lg shadow-luxury">
                 <h3 className="text-xl font-bold text-foreground mb-4">2. Economic Equality</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Through our ANVD token system and Proof of Contribution model, we ensure that
+                  Through our SUZHI token system and Proof of Contribution model, we ensure that
                   everyone receives fair compensation for their work. No exploitation, no unfair
                   hierarchies — just transparent, equitable distribution.
                 </p>
               </div>
 
-              <div className="bg-card p-8 rounded-lg shadow-soft">
+              <div className="bg-card p-8 rounded-lg shadow-luxury">
                 <h3 className="text-xl font-bold text-foreground mb-4">3. Democratic Governance</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Our DAO-based governance ensures every citizen has a voice. Decisions are made
@@ -108,7 +110,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="bg-card p-8 rounded-lg shadow-soft">
+              <div className="bg-card p-8 rounded-lg shadow-luxury">
                 <h3 className="text-xl font-bold text-foreground mb-4">4. Spiritual Evolution</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We believe material progress must be balanced with inner growth. Regular
@@ -158,7 +160,7 @@ const About = () => {
                 description: "We welcome people of all backgrounds, beliefs, and cultures. Our strength lies in our diversity."
               }
             ].map((principle, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+              <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">{principle.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{principle.description}</p>

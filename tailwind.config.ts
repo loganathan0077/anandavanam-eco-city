@@ -47,21 +47,40 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        forest: "hsl(var(--forest))",
-        emerald: "hsl(var(--emerald))",
-        mint: "hsl(var(--mint))",
-        gold: "hsl(var(--gold))",
-        cream: "hsl(var(--cream))",
-        clay: "hsl(var(--clay))",
+        // Premium Theme Custom Colors
+        charcoal: {
+          DEFAULT: "hsl(var(--charcoal))",
+          medium: "hsl(var(--charcoal-medium))",
+          light: "hsl(var(--charcoal-light))",
+        },
+        "red-soil": {
+          DEFAULT: "hsl(var(--red-soil))",
+          light: "hsl(var(--red-soil-light))",
+          lighter: "hsl(var(--red-soil-lighter))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          bright: "hsl(var(--gold-bright))",
+          muted: "hsl(var(--gold-muted))",
+        },
       },
       fontFamily: {
         heading: ['Poppins', 'sans-serif'],
         body: ['Poppins', 'sans-serif'],
+        handwritten: ['Kavivanar', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        'gold': 'var(--shadow-gold)',
+        'luxury': 'var(--shadow-luxury)',
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-gold': 'var(--gradient-gold)',
       },
       keyframes: {
         "accordion-down": {
@@ -80,6 +99,7 @@ export default {
             height: "0",
           },
         },
+        // Kept float/fade-in as they are generic
         "float": {
           "0%, 100%": {
             transform: "translateY(0px)",

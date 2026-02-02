@@ -5,14 +5,14 @@ import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import daoImage from "@/assets/dao-governance.jpg";
+import daoHero from "@/assets/dao-hero.jpg";
 
 const DAO = () => {
   const governanceFeatures = [
     {
       icon: Vote,
       title: "One Token, One Vote",
-      description: "Every ANVD token represents voting power. The more you contribute to the community, the more influence you have."
+      description: "Every SUZHI token represents voting power. The more you contribute to the community, the more influence you have."
     },
     {
       icon: Shield,
@@ -58,10 +58,10 @@ const DAO = () => {
       <Navigation />
 
       <Hero
-        title="DAO Governance"
-        subtitle="True Democracy Through Decentralized Decision-Making"
+        title="SUZHI Governance (DAO)"
+        subtitle="Democratic Governance Powered by the People, for the People"
         height="medium"
-        image={daoImage}
+        image={daoHero}
       >
         <div className="flex justify-center mt-8">
           <a href="https://anandavanamdao-7re.caffeine.xyz/" target="_blank" rel="noopener noreferrer">
@@ -82,16 +82,16 @@ const DAO = () => {
               Decentralized Autonomous Organization
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              ANANDAVANAM is governed by its citizens through a DAO (Decentralized Autonomous Organization).
-              This means no single authority, no centralized control — just transparent, democratic
-              decision-making powered by blockchain technology. Every citizen has a voice, every vote counts,
+              SUZHI is governed by a Decentralized Autonomous Organization (DAO),
+              ensuring that every decision — from budget allocation to community rules — is made
+              transparently and democratically by its citizens. Every citizen has a voice, every vote counts,
               and every decision is recorded immutably.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md://grid-cols-3 gap-6">
             {governanceFeatures.map((feature, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+              <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <feature.icon className="h-6 w-6 text-primary" />
@@ -108,7 +108,7 @@ const DAO = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -119,7 +119,7 @@ const DAO = () => {
             </div>
 
             <div className="space-y-6">
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="flex items-start">
                     <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0 text-xl font-bold">
@@ -137,7 +137,7 @@ const DAO = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="flex items-start">
                     <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0 text-xl font-bold">
@@ -155,7 +155,7 @@ const DAO = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="flex items-start">
                     <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0 text-xl font-bold">
@@ -164,7 +164,7 @@ const DAO = () => {
                     <div>
                       <h3 className="text-xl font-bold text-foreground mb-3">Voting Period</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Citizens cast their votes using their ANVD tokens. Voting power is proportional
+                        Citizens cast their votes using their SUZHI tokens. Voting power is proportional
                         to token holdings, incentivizing active contribution. The voting period lasts
                         5 days, and all votes are permanently recorded on the blockchain.
                       </p>
@@ -173,7 +173,7 @@ const DAO = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <div className="flex items-start">
                     <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0 text-xl font-bold">
@@ -211,7 +211,7 @@ const DAO = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {proposalTypes.map((type, index) => (
-                <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+                <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold text-foreground mb-3">{type.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{type.description}</p>
@@ -224,7 +224,7 @@ const DAO = () => {
       </section>
 
       {/* Governance Principles */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">

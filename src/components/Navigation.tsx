@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -20,13 +21,13 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-soft">
+    <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-luxury">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 transition-smooth hover:opacity-80">
-            <Leaf className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">ANANDAVANAM</span>
+            <img src={logo} alt="Suzhi Logo" className="h-12 w-12 object-contain" />
+            <span className="text-xl font-bold text-foreground">SUZHI</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,7 +47,7 @@ const Navigation = () => {
               </Button>
             </Link>
             <a href="https://anandavanam-gj2.caffeine.xyz/" target="_blank" rel="noopener noreferrer">
-              <Button size="sm" variant="outline" className="ml-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Button size="sm" variant="outline" className="ml-2 border-gold text-gold hover:bg-gold hover:text-charcoal">
                 Work Tracking
               </Button>
             </a>

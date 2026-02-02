@@ -9,14 +9,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState } from "react";
+import exchangeHero from "@/assets/exchange-hero.jpg";
 
 const Exchange = () => {
-  const [fromToken, setFromToken] = useState("ANVD");
+  const [fromToken, setFromToken] = useState("SUZHI");
   const [toToken, setToToken] = useState("USDT");
   const [amount, setAmount] = useState("");
 
   const tokens = [
-    { symbol: "ANVD", name: "Anandavanam Token", rate: 1 },
+    { symbol: "SUZHI", name: "Suzhi Token", rate: 1 },
     { symbol: "ETH", name: "Ethereum", rate: 0.00025 },
     { symbol: "USDT", name: "Tether USD", rate: 1.5 },
     { symbol: "BTC", name: "Bitcoin", rate: 0.000015 },
@@ -58,11 +59,11 @@ const Exchange = () => {
       <Navigation />
 
       <Hero
-        title="ANVD Token Exchange"
-        subtitle="Swap ANVD tokens seamlessly with major cryptocurrencies. Fast, secure, and transparent."
+        title="SUZHI Exchange"
+        subtitle="Fair, Transparent, and Community-Driven Value Exchange"
         showCTA={false}
         height="medium"
-        image="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1920&q=80"
+        image={exchangeHero}
       />
 
       {/* Exchange Interface */}
@@ -160,12 +161,11 @@ const Exchange = () => {
 
                   {/* Exchange Rate */}
                   <div className="bg-gradient-fresh p-4 rounded-lg border border-primary/20">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-muted-foreground">Exchange Rate</span>
-                      <span className="font-bold text-foreground">
-                        1 {fromToken} = {(tokens.find(t => t.symbol === fromToken)?.rate || 1) / (tokens.find(t => t.symbol === toToken)?.rate || 1)} {toToken}
-                      </span>
-                    </div>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      The SUZHI Exchange is the economic heart of our eco-city. Here, you can
+                      trade SUZHI tokens, swap assets, and participate in our local economy. We prioritize
+                      fair value, low fees, and complete transparency on the blockchain.
+                    </p>
                   </div>
 
                   {/* Swap Button */}
@@ -221,7 +221,7 @@ const Exchange = () => {
               Why Choose Our Exchange?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Experience the best-in-class token exchange platform built for the Anandavanam community
+              Experience the best-in-class token exchange platform built for the SUZHI community
             </p>
           </div>
 
@@ -248,21 +248,21 @@ const Exchange = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Start Trading ANVD Today
+              Start Trading SUZHI Today
             </h2>
             <p className="text-lg text-white/90 mb-8">
-              Join thousands of traders in the Anandavanam ecosystem. Buy, sell, and swap ANVD tokens with ease.
+              Join thousands of traders in the SUZHI ecosystem. Buy, sell, and swap SUZHI tokens with ease.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/join">
-                <Button size="lg" variant="secondary" className="text-lg px-8 bg-white hover:bg-white/90">
+                <Button size="lg" variant="secondary" className="text-lg px-8 bg-red-soil hover:bg-red-soil/90 text-white border-2 border-white/20">
                   Become a Citizen
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/tokenomics">
                 <Button size="lg" variant="outline" className="text-lg px-8 border-2 border-white text-white hover:bg-white/10">
-                  Learn About ANVD
+                  Learn About SUZHI
                 </Button>
               </Link>
             </div>

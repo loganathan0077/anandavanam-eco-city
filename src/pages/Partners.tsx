@@ -73,10 +73,10 @@ const Partners = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <Hero
-        title="Partner With Us"
-        subtitle="Building the Future Together — Collaborate on the World's First Blockchain Eco-City"
+        title="Partner with SUZHI"
+        subtitle="Co-Creating a Sustainable Future Through Strategic Alliances"
         height="medium"
       />
 
@@ -86,20 +86,18 @@ const Partners = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <Handshake className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Why Partner with ANANDAVANAM?
+              Why Partner with SUZHI?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              ANANDAVANAM is more than an eco-city — it's a living laboratory for the future of 
-              human civilization. We're seeking partners who share our vision of sustainability, 
-              equality, and innovation. Whether you're a technology company, impact investor, 
-              educational institution, or fellow eco-community, there are many ways we can 
-              collaborate for mutual benefit and planetary good.
+              We believe that no single entity can solve the world's complex challenges alone.
+              That's why SUZHI is built on a foundation of radical collaboration. We partner
+              with organizations, universities, and innovators who share our vision for a regenerative future.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {partnershipTypes.map((type, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+              <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <type.icon className="h-6 w-6 text-primary" />
@@ -127,7 +125,7 @@ const Partners = () => {
       </section>
 
       {/* Benefits for Partners */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -139,7 +137,7 @@ const Partners = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="shadow-soft hover:shadow-glow transition-smooth">
+                <Card key={index} className="shadow-luxury hover:shadow-gold transition-smooth">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold text-foreground mb-3">{benefit.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
@@ -163,11 +161,11 @@ const Partners = () => {
             </div>
 
             <div className="space-y-6">
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Solar Energy Providers</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Seeking partnerships with solar panel manufacturers and renewable energy companies 
+                    Seeking partnerships with solar panel manufacturers and renewable energy companies
                     for installation, maintenance, and ongoing innovation of our 100% solar infrastructure.
                   </p>
                   <div className="flex items-center space-x-2">
@@ -177,11 +175,11 @@ const Partners = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Blockchain Developers</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Looking for blockchain experts to help optimize our DAO infrastructure, smart contracts, 
+                    Looking for blockchain experts to help optimize our DAO infrastructure, smart contracts,
                     and token economics. Opportunity to showcase your technology in a real-world community setting.
                   </p>
                   <div className="flex items-center space-x-2">
@@ -191,11 +189,11 @@ const Partners = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Permaculture Organizations</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Interested in collaborating with permaculture designers, organic farming experts, and 
+                    Interested in collaborating with permaculture designers, organic farming experts, and
                     regenerative agriculture advocates to maximize our 25-acre farming operations.
                   </p>
                   <div className="flex items-center space-x-2">
@@ -205,11 +203,11 @@ const Partners = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Impact Investors & Funds</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Seeking strategic investments from individuals and organizations committed to sustainability 
+                    Seeking strategic investments from individuals and organizations committed to sustainability
                     and social impact. Offering transparent returns through token appreciation and governance participation.
                   </p>
                   <div className="flex items-center space-x-2">
@@ -219,11 +217,11 @@ const Partners = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Research Universities</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Partner with us for research on sustainable living, decentralized governance, community 
+                    Partner with us for research on sustainable living, decentralized governance, community
                     economics, and alternative social structures. Opportunity for publications and student projects.
                   </p>
                   <div className="flex items-center space-x-2">
@@ -238,7 +236,7 @@ const Partners = () => {
       </section>
 
       {/* Partnership Criteria */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -275,8 +273,8 @@ const Partners = () => {
               Let's Build the Future Together
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              If you're interested in partnering with ANANDAVANAM, we'd love to hear from you. 
-              Submit your partnership proposal through our contact form, and our team will review 
+              If you're interested in partnering with SUZHI, we'd love to hear from you.
+              Submit your partnership proposal through our contact form, and our team will review
               it with the community. All major partnerships are approved through DAO governance.
             </p>
             <Link to="/join">

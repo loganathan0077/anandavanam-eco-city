@@ -3,13 +3,14 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import tokenomicsBg from "@/assets/tokenomics-bg.jpg";
 
 const Tokenomics = () => {
   const tokenFeatures = [
     {
       icon: Coins,
-      title: "ANVD Token",
-      description: "Our native blockchain token serves as the primary currency within ANANDAVANAM. Earned through contribution, spent on goods and services."
+      title: "SUZHI Token",
+      description: "Our native blockchain token serves as the primary currency within SUZHI. Earned through contribution, spent on goods and services."
     },
     {
       icon: TrendingUp,
@@ -35,9 +36,10 @@ const Tokenomics = () => {
       <Navigation />
 
       <Hero
-        title="ANVD Tokenomics"
-        subtitle="A Fair, Transparent, and Sustainable Economic System Powered by Blockchain"
+        title="SUZHI Tokenomics"
+        subtitle="A Regenerative Economic Model for a Thriving Community"
         height="medium"
+        image={tokenomicsBg}
       />
 
       {/* Token Overview */}
@@ -46,12 +48,13 @@ const Tokenomics = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <Coins className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              The ANVD Token Economy
+              The SUZHI Token Economy
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              ANVD (Anandavanam Token) is the lifeblood of ANANDAVANAM's internal economy.
-              Unlike traditional currencies controlled by banks or governments, ANVD is community-owned,
-              transparently managed, and directly tied to real work and contribution.
+              At the heart of SUZHI lies the SUZHI token — a digital currency designed
+              to incentivize sustainable behavior, reward contribution, and facilitate fair trade.
+              Unlike traditional fiat currencies, SUZHI is backed by real value: the land, resources,
+              and productive output of our eco-city.
             </p>
           </div>
 
@@ -80,7 +83,7 @@ const Tokenomics = () => {
             <div className="text-center mb-12">
               <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                How ANVD Works
+                How SUZHI Works
               </h2>
             </div>
 
@@ -92,7 +95,7 @@ const Tokenomics = () => {
                     Earn Through Contribution
                   </h3>
                   <p className="text-muted-foreground leading-relaxed pl-14">
-                    Citizens earn ANVD tokens by contributing to the community. This includes farming,
+                    Citizens earn SUZHI tokens by contributing to the community. This includes farming,
                     building, teaching, creating art, maintaining systems, caring for others, and any
                     work that adds value. The Proof of Contribution system tracks and verifies all work
                     through smart contracts, ensuring fair compensation.
@@ -107,7 +110,7 @@ const Tokenomics = () => {
                     Spend Within the Ecosystem
                   </h3>
                   <p className="text-muted-foreground leading-relaxed pl-14">
-                    ANVD tokens can be used to purchase goods and services within ANANDAVANAM. From fresh
+                    SUZHI tokens can be used to purchase goods and services within SUZHI. From fresh
                     produce at the community market to housing credits, education programs, and wellness
                     services — all can be accessed using tokens. External purchases are facilitated through
                     a community-managed exchange.
@@ -136,7 +139,7 @@ const Tokenomics = () => {
                     Save and Grow
                   </h3>
                   <p className="text-muted-foreground leading-relaxed pl-14">
-                    Unlike inflationary fiat currencies, ANVD maintains stable value through algorithmic
+                    Unlike inflationary fiat currencies, SUZHI maintains stable value through algorithmic
                     supply management. Citizens can save tokens knowing their purchasing power is protected.
                     As the community grows and productivity increases, token value appreciates organically.
                   </p>
@@ -157,7 +160,7 @@ const Tokenomics = () => {
                 Token Distribution
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Total Supply: 10,000,000 ANVD • Fair and Transparent Allocation
+                Total Supply: 10,000,000 SUZHI • Fair and Transparent Allocation
               </p>
             </div>
 
@@ -173,7 +176,7 @@ const Tokenomics = () => {
                       <div className="text-right ml-4">
                         <div className="text-3xl font-bold text-primary">{item.percentage}%</div>
                         <div className="text-sm text-muted-foreground">
-                          {(10000000 * item.percentage / 100).toLocaleString()} ANVD
+                          {(10000000 * item.percentage / 100).toLocaleString()} SUZHI
                         </div>
                       </div>
                     </div>

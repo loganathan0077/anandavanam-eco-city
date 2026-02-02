@@ -10,15 +10,15 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ icon: Icon, title, description, gradient = false }: FeatureCardProps) => {
   return (
-    <Card className={`transition-smooth hover:shadow-glow hover:-translate-y-2 ${gradient ? 'gradient-nature text-cream' : ''}`}>
+    <Card className={`transition-smooth hover:shadow-gold hover:-translate-y-2 ${gradient ? 'gradient-hero text-primary-foreground' : ''}`}>
       <CardHeader>
-        <div className={`w-12 h-12 rounded-lg ${gradient ? 'bg-cream/20' : 'bg-primary/10'} flex items-center justify-center mb-4`}>
-          <Icon className={`h-6 w-6 ${gradient ? 'text-cream' : 'text-primary'}`} />
+        <div className={`w-12 h-12 rounded-lg ${gradient ? 'bg-primary-foreground/20' : 'bg-primary/10'} flex items-center justify-center mb-4`}>
+          <Icon className={`h-6 w-6 ${gradient ? 'text-primary-foreground' : 'text-primary'}`} />
         </div>
-        <CardTitle className={gradient ? 'text-cream' : ''}>{title}</CardTitle>
+        <CardTitle className={gradient ? 'text-primary-foreground' : ''}>{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className={`${gradient ? 'text-cream/90' : ''} leading-relaxed`}>
+        <CardDescription className={`${gradient ? 'text-primary-foreground/90' : ''} leading-relaxed`}>
           {description}
         </CardDescription>
       </CardContent>

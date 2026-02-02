@@ -27,7 +27,7 @@ const Join = () => {
     // In a real application, this would send to a backend
     toast({
       title: "Application Submitted!",
-      description: "Thank you for your interest in ANANDAVANAM. We'll review your application and get back to you within 5-7 business days.",
+      description: "Thank you for your interest in SUZHI. We'll review your application and get back to you within 5-7 business days.",
     });
 
     // Reset form
@@ -52,7 +52,7 @@ const Join = () => {
       <Navigation />
 
       <Hero
-        title="Join ANANDAVANAM"
+        title="Join SUZHI"
         subtitle="Take the First Step Toward a Sustainable, Conscious Future"
         height="medium"
       />
@@ -75,11 +75,11 @@ const Join = () => {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20 gradient-peace">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Form */}
-            <Card className="shadow-glow">
+            <Card className="shadow-gold">
               <CardHeader>
                 <CardTitle className="text-2xl">Get in Touch</CardTitle>
                 <CardDescription>
@@ -154,7 +154,7 @@ const Join = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell us about yourself, your interest in ANANDAVANAM, relevant experience, and any questions you have..."
+                      placeholder="Tell us about yourself, your interest in SUZHI, relevant experience, and any questions you have..."
                       rows={6}
                       required
                     />
@@ -170,7 +170,7 @@ const Join = () => {
 
             {/* Contact Info */}
             <div className="space-y-6">
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="bg-primary/10 p-3 rounded-lg">
@@ -179,10 +179,9 @@ const Join = () => {
                     <div>
                       <h3 className="text-lg font-bold text-foreground mb-2">Email Us</h3>
                       <a
-                        href="mailto:connect@anandavanam.eco"
-                        className="text-primary hover:underline transition-smooth"
+                        href="mailto:connect@suzhi.eco"
                       >
-                        connect@anandavanam.eco
+                        connect@suzhi.eco
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">
                         We respond within 5-7 business days
@@ -192,7 +191,7 @@ const Join = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="bg-primary/10 p-3 rounded-lg">
@@ -209,7 +208,7 @@ const Join = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="bg-primary/10 p-3 rounded-lg">
@@ -230,7 +229,7 @@ const Join = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft bg-card">
+              <Card className="shadow-luxury bg-card">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-foreground mb-3">What Happens Next?</h3>
                   <ol className="space-y-3 text-muted-foreground">
@@ -269,7 +268,7 @@ const Join = () => {
             </div>
 
             <div className="space-y-4">
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     Do I need blockchain knowledge to become a citizen?
@@ -281,20 +280,20 @@ const Join = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     What's the initial investment required?
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Citizens need financial stability for the first 3-6 months while they integrate into
-                    the community. After that, your work earns ANVD tokens for all needs. Specific amounts
+                    the community. After that, your work earns SUZHI tokens for all needs. Specific amounts
                     are discussed during the application process.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     Can I visit before committing?
@@ -306,7 +305,7 @@ const Join = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-soft">
+              <Card className="shadow-luxury">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     Is this suitable for families with children?

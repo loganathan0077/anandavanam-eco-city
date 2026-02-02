@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-eco-city.jpg";
 
 interface HeroProps {
-  title: string;
+  title: string | React.ReactNode;
   subtitle: string;
   showCTA?: boolean;
   height?: "full" | "medium" | "small";
@@ -32,7 +32,7 @@ const Hero = ({
       <div className="absolute inset-0">
         <img
           src={image}
-          alt="Anandavanam Eco City"
+          alt="Suzhi Eco City"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 gradient-hero" />
@@ -40,31 +40,31 @@ const Hero = ({
 
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-mint/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-red-soil/20 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-gold/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-emerald/20 rounded-full blur-2xl animate-float" style={{ animationDelay: "4s" }} />
+        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-gold/20 rounded-full blur-2xl animate-float" style={{ animationDelay: "4s" }} />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-cream mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
             {title}
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-cream/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 mb-8 leading-relaxed max-w-3xl mx-auto">
             {subtitle}
           </p>
 
           {showCTA && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/join">
-                <Button size="lg" className="text-lg px-8 shadow-glow">
+                <Button size="lg" className="text-lg px-8 shadow-gold">
                   Join the Movement
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/about">
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-cream/10 border-cream text-cream hover:bg-cream hover:text-forest">
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-gold/10 border-gold text-gold hover:bg-gold hover:text-charcoal">
                   Learn More
                 </Button>
               </Link>
@@ -79,8 +79,8 @@ const Hero = ({
       {
         height === "full" && (
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-cream/50 rounded-full flex items-start justify-center p-2">
-              <div className="w-1 h-3 bg-cream/50 rounded-full animate-pulse" />
+            <div className="w-6 h-10 border-2 border-foreground/50 rounded-full flex items-start justify-center p-2">
+              <div className="w-1 h-3 bg-foreground/50 rounded-full animate-pulse" />
             </div>
           </div>
         )

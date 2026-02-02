@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import { Button } from "@/components/ui/button";
+import visionImage from "@/assets/vision-site.jpg";
 
 const Index = () => {
   const features = [
@@ -16,7 +17,7 @@ const Index = () => {
     },
     {
       icon: Coins,
-      title: "ANVD Token Economy",
+      title: "SUZHI Token Economy",
       description: "Fair, transparent blockchain-based currency system where work directly translates to earned tokens.",
       gradient: false,
     },
@@ -39,7 +40,16 @@ const Index = () => {
       <Navigation />
 
       <Hero
-        title="Welcome to ANANDAVANAM"
+        title={
+          <div className="flex flex-col items-center mb-20">
+            <span
+              className="relative z-50 inline-block font-handwritten text-6xl md:text-8xl lg:text-9xl leading-relaxed bg-clip-text text-transparent bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#EDC967] py-12 drop-shadow-2xl"
+              style={{ backgroundImage: 'linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967)' }}
+            >
+              சுழி
+            </span>
+          </div>
+        }
         subtitle="The Future Rooted in Nature — A Decentralized Spiritual City Built on Blockchain and Sustainability"
         showCTA={true}
         image="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1920&q=80"
@@ -56,7 +66,7 @@ const Index = () => {
               A New Civilization of Conscious Living
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              ANANDAVANAM is more than a city — it's a living experiment in creating a balanced,
+              SUZHI is more than a city — it's a living experiment in creating a balanced,
               equitable, and spiritually-aware society. We combine ancient wisdom with cutting-edge
               blockchain technology to build a self-sustaining community designed for the next 100 years.
             </p>
@@ -64,13 +74,13 @@ const Index = () => {
 
           {/* Vision Image */}
           <div className="max-w-4xl mx-auto mb-12 animate-slide-up">
-            <div className="relative rounded-2xl overflow-hidden shadow-intense">
+            <div className="relative rounded-2xl overflow-hidden shadow-luxury">
               <img
-                src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=1200&q=80"
+                src={visionImage}
                 alt="Sustainable Eco City Vision"
                 className="w-full h-[400px] object-cover"
               />
-              <div className="absolute inset-0 gradient-glow opacity-20" />
+              <div className="absolute inset-0 gradient-hero opacity-40" />
             </div>
           </div>
 
@@ -86,10 +96,10 @@ const Index = () => {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-20 gradient-fresh">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="bg-card rounded-xl shadow-soft transition-smooth hover:shadow-glow overflow-hidden">
+            <div className="bg-card rounded-xl shadow-luxury transition-smooth hover:shadow-gold overflow-hidden">
               <div className="relative h-48">
                 <img
                   src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80"
@@ -108,7 +118,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-card rounded-xl shadow-soft transition-smooth hover:shadow-glow overflow-hidden">
+            <div className="bg-card rounded-xl shadow-luxury transition-smooth hover:shadow-gold overflow-hidden">
               <div className="relative h-48">
                 <img
                   src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80"
@@ -127,7 +137,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="bg-card rounded-xl shadow-soft transition-smooth hover:shadow-glow overflow-hidden">
+            <div className="bg-card rounded-xl shadow-luxury transition-smooth hover:shadow-gold overflow-hidden">
               <div className="relative h-48">
                 <img
                   src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80"
@@ -152,14 +162,14 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center bg-card rounded-2xl p-12 shadow-glow border border-primary/20">
+          <div className="max-w-4xl mx-auto text-center bg-card rounded-2xl p-12 shadow-gold border border-primary/20">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Be Part of the Future
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Join us in building a sustainable, equitable, and spiritually conscious society.
               Whether you want to become a citizen, partner with us, or simply learn more,
-              we welcome you to the ANANDAVANAM family.
+              we welcome you to the SUZHI family.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/join">
