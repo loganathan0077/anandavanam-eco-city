@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Tokenomics from "./pages/Tokenomics";
@@ -16,32 +17,63 @@ import Join from "./pages/Join";
 import Exchange from "./pages/Exchange";
 import NotFound from "./pages/NotFound";
 
+// Import images for preloading
+import citizenHero from "@/assets/citizen-hero.jpg";
+import daoHero from "@/assets/dao-hero.jpg";
+import exchangeHero from "@/assets/exchange-hero.jpg";
+import roadmapHero from "@/assets/roadmap-hero.jpg";
+import aboutHero from "@/assets/about-hero.jpg";
+import visionSite from "@/assets/vision-site.jpg";
+import logo from "@/assets/logo.png";
+import tokenomicsBg from "@/assets/tokenomics-bg.jpg";
+
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/tokenomics" element={<Tokenomics />} />
-          <Route path="/exchange" element={<Exchange />} />
-          <Route path="/dao" element={<DAO />} />
-          <Route path="/land" element={<Land />} />
-          <Route path="/citizen" element={<Citizen />} />
-          <Route path="/roadmap" element={<Roadmap />} />
-          <Route path="/community" element={<Community />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/join" element={<Join />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  // Preload critical images for smoother navigation
+  useEffect(() => {
+    const imagesToPreload = [
+      citizenHero,
+      daoHero,
+      exchangeHero,
+      roadmapHero,
+      aboutHero,
+      visionSite,
+      logo,
+      tokenomicsBg
+    ];
+
+    imagesToPreload.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/tokenomics" element={<Tokenomics />} />
+            <Route path="/exchange" element={<Exchange />} />
+            <Route path="/dao" element={<DAO />} />
+            <Route path="/land" element={<Land />} />
+            <Route path="/citizen" element={<Citizen />} />
+            <Route path="/roadmap" element={<Roadmap />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/partners" element={<Partners />} />
+            <Route path="/join" element={<Join />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
