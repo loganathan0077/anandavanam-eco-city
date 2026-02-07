@@ -79,7 +79,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-gold mt-1 flex-shrink-0" />
-                <span className="text-foreground/80">50-Acre Eco City Zone, Sustainable Living District</span>
+                <span className="text-foreground/80">SUZHI Eco City, Manamadurai, Sivaganga District, Tamilnadu, India-630606</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-gold flex-shrink-0" />
@@ -92,7 +92,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-gold flex-shrink-0" />
-                <span className="text-foreground/80">+91 (0) 123-456-7890</span>
+                <span className="text-foreground/80">+91 9999999999</span>
               </li>
             </ul>
           </div>

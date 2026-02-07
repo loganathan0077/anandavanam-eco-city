@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sequence Player</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        #viewer {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        #current-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #3b82f6;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        input[type=range] {
+            width: 300px;
+        }
+        span {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sequence Viewer</h1>
+
+    <div id="viewer">
+        <img id="current-image" src="images/ezgif-frame-001.jpg" alt="Frame">
+    </div>
+
+    <div class="controls">
+        <button id="play-pause">Play</button>
+        <input type="range" id="scrubber" min="1" max="208" value="1">
+        <span id="frame-counter">001 / 208</span>
+    </div>
+
+    <script>
+        const totalFrames = 208;
+        const imgElement = document.getElementById('current-image');
+        const playBtn = document.getElementById('play-pause');
+        const scrubber = document.getElementById('scrubber');
+        const counter = document.getElementById('frame-counter');
+
+        let currentFrame = 1;
+        let isPlaying = false;
+        let interval;
+        const fps = 24;
+
+        function updateFrame(frame) {
+            currentFrame = frame;
+            const padded = String(frame).padStart(3, '0');
+            imgElement.src = `images/ezgif-frame-${padded}.jpg`;
+            scrubber.value = frame;
+            counter.textContent = `${padded} / ${totalFrames}`;
+        }
+
+        function play() {
+            isPlaying = true;
+            playBtn.textContent = 'Pause';
+            interval = setInterval(() => {
+                let next = currentFrame + 1;
+                if (next > totalFrames) next = 1;
+                updateFrame(next);
+            }, 1000 / fps);
+        }
+
+        function pause() {
+            isPlaying = false;
+            playBtn.textContent = 'Play';
+            clearInterval(interval);
+        }
+
+        playBtn.addEventListener('click', () => {
+            if (isPlaying) pause();
+            else play();
+        });
+
+        scrubber.addEventListener('input', (e) => {
+            pause();
+            updateFrame(parseInt(e.target.value));
+        });
+
+        // Preload images for smoothness (optional, might require heavy bandwidth)
+        // For local, it should be fine.
+    </script>
+</body>
+</html>

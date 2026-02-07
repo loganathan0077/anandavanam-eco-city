@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Leaf, Coins, Users, Globe, ArrowRight, Sparkles, Heart, TreePine } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import ScrollSequence from "@/components/ScrollSequence";
 import FeatureCard from "@/components/FeatureCard";
 import { Button } from "@/components/ui/button";
 import visionImage from "@/assets/vision-site.jpg";
@@ -39,21 +39,56 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
 
-      <Hero
-        title={
-          <div className="flex flex-col items-center mb-20">
-            <span
-              className="relative z-50 inline-block font-handwritten text-6xl md:text-8xl lg:text-9xl leading-relaxed bg-clip-text text-transparent bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#EDC967] py-12 drop-shadow-2xl"
-              style={{ backgroundImage: 'linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967)' }}
-            >
-              சுழி
-            </span>
+      <ScrollSequence frameCount={208}>
+        {/* Gradient Overlay for Readability & Premium Feel */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-background/90 z-0" />
+
+        <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-10">
+          <div className="text-center space-y-8 animate-slide-up max-w-4xl mx-auto">
+            {/* Main Title */}
+            <div className="relative inline-block">
+              <span
+                className="relative z-50 inline-block font-handwritten text-[6rem] md:text-[9rem] lg:text-[12rem] xl:text-[14rem] leading-normal bg-clip-text text-transparent bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#EDC967] py-12 drop-shadow-2xl"
+                style={{ backgroundImage: 'linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967)' }}
+              >
+                சுழி
+              </span>
+              <div className="absolute -inset-8 bg-gold/10 blur-[60px] rounded-full opacity-60 -z-10" />
+            </div>
+
+            <div className="space-y-8">
+              <h2 className="text-3xl md:text-5xl font-light tracking-wide text-white drop-shadow-lg">
+                The Future Rooted in Nature
+              </h2>
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto drop-shadow-md font-light">
+                A Decentralized Spiritual City Built on Blockchain and Sustainability.
+                Where ancient wisdom meets modern technology.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+                <Link to="/join">
+                  <Button size="lg" className="text-xl px-10 h-16 rounded-full shadow-[0_0_30px_rgba(237,201,103,0.3)] hover:shadow-[0_0_50px_rgba(237,201,103,0.5)] transition-all duration-300 bg-gradient-to-r from-gold to-[#AE8625] text-black font-semibold border-none">
+                    Join the Movement
+                    <ArrowRight className="ml-2 h-6 w-6" />
+                  </Button>
+                </Link>
+                <Link to="/about">
+                  <Button size="lg" variant="outline" className="text-xl px-10 h-16 rounded-full border-2 border-white/30 text-white hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-sm">
+                    Discover More
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
-        }
-        subtitle="The Future Rooted in Nature — A Decentralized Spiritual City Built on Blockchain and Sustainability"
-        showCTA={true}
-        image="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1920&q=80"
-      />
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+          <div className="w-8 h-12 border-2 border-white/30 rounded-full flex items-start justify-center p-2 backdrop-blur-sm">
+            <div className="w-1.5 h-2 bg-gold/80 rounded-full animate-scroll-dot" />
+          </div>
+        </div>
+      </ScrollSequence>
 
       {/* Vision Section */}
       <section className="py-20 bg-background">
