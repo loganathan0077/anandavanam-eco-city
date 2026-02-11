@@ -126,7 +126,7 @@ const ScrollSequence: React.FC<ScrollSequenceProps> = ({
         <div ref={containerRef} className="relative w-full h-[300vh]"> {/* Reduced scroll height slightly for better pacing */}
             <div className={`sticky top-0 md:top-16 w-full h-screen md:h-[calc(100vh-4rem)] overflow-hidden ${className}`}>
                 {/* Scale 110% to crop out edge watermarks */}
-                <canvas ref={canvasRef} className="absolute inset-0 w-full h-full object-cover block scale-110" />
+                <canvas ref={canvasRef} className="absolute inset-0 w-full h-full object-cover block" />
                 <div className="absolute inset-0 z-10">
                     {children}
                 </div>

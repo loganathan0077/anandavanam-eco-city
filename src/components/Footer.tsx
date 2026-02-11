@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Facebook, Instagram, Twitter } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -17,6 +17,17 @@ const Footer = () => {
               Building the world's first decentralized conscious eco-city. A harmonious blend of
               sustainability, blockchain innovation, and conscious living.
             </p>
+            <div className="flex space-x-4 mt-6">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-gold transition-smooth">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-gold transition-smooth">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-gold transition-smooth">
+                <Twitter className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
