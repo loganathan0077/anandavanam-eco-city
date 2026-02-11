@@ -48,7 +48,7 @@ const Index = () => {
             {/* Main Title */}
             <div className="relative inline-block">
               <span
-                className="relative z-50 inline-block font-handwritten text-[6rem] md:text-[9rem] lg:text-[12rem] xl:text-[14rem] 2xl:text-[16rem] leading-normal bg-clip-text text-transparent bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#EDC967] py-12 drop-shadow-2xl"
+                className="relative z-50 inline-block font-handwritten text-[5rem] md:text-[7rem] lg:text-[9rem] xl:text-[11rem] 2xl:text-[13rem] leading-normal bg-clip-text text-transparent bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#EDC967] py-8 drop-shadow-2xl"
                 style={{ backgroundImage: 'linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967)' }}
               >
                 சுழி
@@ -56,24 +56,23 @@ const Index = () => {
               <div className="absolute -inset-8 bg-gold/10 blur-[60px] rounded-full opacity-60 -z-10" />
             </div>
 
-            <div className="space-y-8">
-              <h2 className="text-3xl md:text-5xl font-light tracking-wide text-white drop-shadow-lg">
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-light tracking-wide text-white drop-shadow-lg">
                 The Future Rooted in Nature
               </h2>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto drop-shadow-md font-light">
-                A Decentralized Conscious Eco-City Built on Blockchain and Sustainability.
-                Where ancient wisdom meets modern technology.
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto drop-shadow-md font-light">
+                A decentralized, conscious eco-city built on blockchain and sustainability — where ancient wisdom meets modern technology.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+              <div className="flex flex-col sm:flex-row gap-5 justify-center pt-6">
                 <Link to="/join">
-                  <Button size="lg" className="text-xl px-8 md:px-10 h-16 rounded-full shadow-[0_0_30px_rgba(237,201,103,0.3)] hover:shadow-[0_0_50px_rgba(237,201,103,0.5)] transition-all duration-300 bg-gradient-to-r from-gold to-[#AE8625] text-black font-semibold border-none">
+                  <Button size="lg" className="text-lg px-6 md:px-8 h-14 rounded-full shadow-[0_0_30px_rgba(237,201,103,0.3)] hover:shadow-[0_0_50px_rgba(237,201,103,0.5)] transition-all duration-300 bg-gradient-to-r from-gold to-[#AE8625] text-black font-semibold border-none">
                     Join the Movement
-                    <ArrowRight className="ml-2 h-6 w-6" />
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
                 <Link to="/about">
-                  <Button size="lg" variant="outline" className="text-xl px-8 md:px-10 h-16 rounded-full border-2 border-white/30 text-white hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-sm">
+                  <Button size="lg" variant="outline" className="text-lg px-6 md:px-8 h-14 rounded-full border-2 border-white/30 text-white hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-sm">
                     Discover More
                   </Button>
                 </Link>
