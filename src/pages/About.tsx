@@ -12,7 +12,7 @@ const About = () => {
 
       <Hero
         title="About SUZHI"
-        subtitle="Building a Self-Sustaining Spiritual Eco-City for the Next Generation"
+        subtitle="Building a Self-Sustaining Conscious Eco-City for the Next Generation"
         height="medium"
         image={aboutHero}
       />
@@ -28,7 +28,7 @@ const About = () => {
               </CardHeader>
               <CardContent className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
-                  To create a living model of sustainable, equitable, and spiritually conscious
+                  To create a living model of sustainable, equitable, and conscious
                   living that can inspire communities worldwide. SUZHI demonstrates that
                   modern technology and ancient wisdom can coexist harmoniously.
                 </p>
@@ -51,7 +51,7 @@ const About = () => {
               <CardContent className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   A world where cities are regenerative ecosystems, where governance is truly
-                  democratic, and where spiritual growth is as valued as material prosperity.
+                  democratic, and where inner growth is as valued as material prosperity.
                 </p>
                 <p>
                   We envision SUZHI as the first of many such communities — networked
@@ -59,7 +59,7 @@ const About = () => {
                   planetary healing.
                 </p>
                 <p>
-                  By 2124, we see a global network of self-sustaining spiritual cities, each
+                  By 2124, we see a global network of self-sustaining conscious cities, each
                   unique yet united by shared values of sustainability, equality, and consciousness.
                 </p>
               </CardContent>
@@ -111,10 +111,10 @@ const About = () => {
               </div>
 
               <div className="bg-card p-8 rounded-lg shadow-luxury">
-                <h3 className="text-xl font-bold text-foreground mb-4">4. Spiritual Evolution</h3>
+                <h3 className="text-xl font-bold text-foreground mb-4">4. Inner Growth</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We believe material progress must be balanced with inner growth. Regular
-                  meditation, spiritual practices, community gatherings, and consciousness
+                  meditation, mindfulness practices, community gatherings, and consciousness
                   cultivation are woven into daily life.
                 </p>
               </div>

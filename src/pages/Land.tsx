@@ -58,7 +58,7 @@ const Land = () => {
     {
       name: "Community Center",
       area: "2 acres",
-      description: "Gathering halls, meditation spaces, workshops, libraries, and wellness centers. The social and spiritual heart of SUZHI."
+      description: "Gathering halls, meditation spaces, workshops, libraries, and wellness centers. The social and conscious heart of SUZHI."
     },
     {
       name: "Nature Reserve",
@@ -225,7 +225,7 @@ const Land = () => {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-3">Educational Campus</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Schools teaching sustainable living, blockchain technology, and spiritual practices.
+                    Schools teaching sustainable living, blockchain technology, and mindfulness practices.
                   </p>
                 </CardContent>
               </Card>

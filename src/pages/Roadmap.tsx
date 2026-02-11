@@ -127,7 +127,7 @@ const Roadmap = () => {
               The Path Forward
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Building a self-sustaining spiritual eco-city is an ambitious undertaking that requires
+              Building a self-sustaining conscious eco-city is an ambitious undertaking that requires
               careful planning, community input, and patient execution. Our roadmap balances pragmatic
               milestones with visionary long-term goals. Progress is tracked transparently on the
               blockchain, and all major decisions go through DAO governance.

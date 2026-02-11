@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-lg font-bold">SUZHI</span>
             </div>
             <p className="text-foreground/80 text-sm leading-relaxed">
-              Building the world's first decentralized spiritual eco-city. A harmonious blend of
+              Building the world's first decentralized conscious eco-city. A harmonious blend of
               sustainability, blockchain innovation, and conscious living.
             </p>
           </div>

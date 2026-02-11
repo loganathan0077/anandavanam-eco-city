@@ -25,7 +25,7 @@ const Community = () => {
     {
       icon: BookOpen,
       title: "Continuous Learning",
-      description: "Weekly workshops on sustainable living, blockchain technology, spiritual practices, permaculture, and personal development."
+      description: "Weekly workshops on sustainable living, blockchain technology, mindfulness practices, permaculture, and personal development."
     }
   ];
 
@@ -53,7 +53,7 @@ const Community = () => {
     {
       title: "Wellness Retreats",
       frequency: "Quarterly",
-      description: "Intensive periods focused on meditation, yoga, healing practices, and spiritual deepening."
+      description: "Intensive periods focused on meditation, yoga, healing practices, and inner growth."
     },
     {
       title: "Children's Programs",
@@ -65,7 +65,7 @@ const Community = () => {
   const spaces = [
     {
       name: "Meditation Hall",
-      description: "Peaceful sanctuary with natural acoustics for group meditations, yoga, and spiritual practices."
+      description: "Peaceful sanctuary with natural acoustics for group meditations, yoga, and mindfulness practices."
     },
     {
       name: "Community Kitchen",
@@ -77,7 +77,7 @@ const Community = () => {
     },
     {
       name: "Library & Learning Center",
-      description: "Extensive collection of books on sustainability, spirituality, technology, and permaculture."
+      description: "Extensive collection of books on sustainability, conscious living, technology, and permaculture."
     },
     {
       name: "Amphitheater",

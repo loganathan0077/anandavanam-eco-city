@@ -30,7 +30,7 @@ const Index = () => {
     {
       icon: Globe,
       title: "Global Community",
-      description: "A diverse, conscious collective united by shared values of sustainability, spirituality, and innovation.",
+      description: "A diverse, conscious collective united by shared values of sustainability, conscious living, and innovation.",
       gradient: false,
     },
   ];
@@ -61,7 +61,7 @@ const Index = () => {
                 The Future Rooted in Nature
               </h2>
               <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto drop-shadow-md font-light">
-                A Decentralized Spiritual City Built on Blockchain and Sustainability.
+                A Decentralized Conscious Eco-City Built on Blockchain and Sustainability.
                 Where ancient wisdom meets modern technology.
               </p>
 
@@ -102,7 +102,7 @@ const Index = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               SUZHI is more than a city — it's a living experiment in creating a balanced,
-              equitable, and spiritually-aware society. We combine ancient wisdom with cutting-edge
+              equitable, and consciously-aware society. We combine ancient wisdom with cutting-edge
               blockchain technology to build a self-sustaining community designed for the next 100 years.
             </p>
           </div>
@@ -176,14 +176,14 @@ const Index = () => {
               <div className="relative h-48">
                 <img
                   src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80"
-                  alt="Spiritual Growth and Meditation"
+                  alt="Inner Growth and Meditation"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
               </div>
               <div className="p-8 text-center">
                 <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-4">Spiritual Growth</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Inner Growth</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   A community that nurtures consciousness, meditation, and inner peace. Technology
                   serves humanity, not the other way around.
@@ -202,7 +202,7 @@ const Index = () => {
               Be Part of the Future
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Join us in building a sustainable, equitable, and spiritually conscious society.
+              Join us in building a sustainable, equitable, and conscious society.
               Whether you want to become a citizen, partner with us, or simply learn more,
               we welcome you to the SUZHI family.
             </p>
